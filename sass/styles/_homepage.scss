@@ -77,3 +77,49 @@ body {
         font-weight: 500;
     }
 }
+
+.restaurant {
+    background-color: $background-color;
+    padding: 40px 15px 90px 15px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    position: relative;
+    height: 250px;
+
+    &__img {
+        border-radius: 20px 20px 0 0;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    &__label {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiary-color;
+        padding: 4px 13px;
+        border-radius: 3px;
+        color: green;
+        font-weight: 500;
+    }
+
+    &__title {
+        color: black;
+        margin: 13px 0 -2px 15px;
+    }
+
+    &__city {
+        color: black;
+        margin: 0 0 0 15px;
+        font-size: 17px;
+    }
+}
