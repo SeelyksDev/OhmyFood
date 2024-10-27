@@ -1,0 +1,23 @@
+.menu {
+    &__container {
+        padding: 30px 15px 50px 15px;
+        position: relative;
+        background-color: $background-color;
+        border-radius: 45px 45px 0 0;
+        top: -45px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 95%;
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-weight: 400;
+        font-size: 28px;
+        margin-right: 27px;
+    }
+}
