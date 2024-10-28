@@ -1,0 +1,57 @@
+.loader {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 1;
+    animation: loader 900ms both;
+    animation-delay: 1500ms;
+
+    // cercle rotatif
+    &::after {
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 10px dashed transparent;
+        border-top: 10px dashed $secondary-color;
+        border-right: 10px solid $secondary-color;
+        animation: rotate-circle 700ms 3;
+    }
+}
+
+@keyframes rotate-circle {
+    to {
+        transform: rotate(1turn);
+    }
+}
+// Gère la disparition du loader
+@keyframes loader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .loader {
+        &::after {
+            content: "";
+            height: 150px;
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .loader {
+        &::after {
+            content: "";
+            height: 125px;
+            width: 125px;
+        }
+    }
+}
