@@ -1,0 +1,13 @@
+@media screen and (min-width: 1025px) {
+    .menu {
+        &__img {
+            height: 500px;
+            object-fit: cover;
+        }
+        &__container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 60px 205px 50px 205px;
+        }
+    }
+}
